@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="S.css">
+
+    
+    <title>INTERFACE ROBOT</title>
+    
+</head>
+
+<body>
+    <header>
+    </header>
+	
+<div class="one">
+<h3>Control Interface For Moving The Base</h3></div>
+
+    <div class = "container">
+
+        <form id="myForm3" action="index.php" method = "POST"> 
+
+
+         <div class = "forward">
+                <input type="submit" value = "Forward" name ="Forward"  style="font-size: 30px; background: LightBlue; border-radius: 40px;" >
+            </div>
+            
+
+            <div class = "center">
+                <input type="submit" value = "Left" name ="ysar"  style="font-size: 40px; background: LightBlue; border-radius: 30px;" >
+               <input type="submit" value = "Stop" name ="Stop"  style="font-size: 30px; background: red; border-radius: 30px; color: white;" > 
+               <input type="submit" value = "Right" name ="ymen"  style="font-size: 40px; background: LightBlue; border-radius: 50px;" > 
+            </div>
+
+            <div class = "backward">
+                <input type="submit" value = "Backward" name ="Backward"  style="font-size: 30px; background: LightBlue; border-radius: 40px;" >
+
+            </div> 
+
+            </form>
+
+    </div>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "c0c91edf-ab58-4bed-ada0-6458676bbe16", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "4ef547c3-fedc-4870-bba7-157b3d02561f", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>
